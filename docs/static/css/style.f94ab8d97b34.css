@@ -1,0 +1,373 @@
+body {
+  background: white;
+  color: #393939;
+  line-height: 1.6em;
+  font-family: 'Lato';
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+a,
+a:hover {
+  color: #f9bf3b;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none !important;
+}
+section {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.container {
+  margin-top: 10px;
+}
+main {
+  position: relative;
+}
+header {
+  text-align: center;
+  float: left;
+}
+header img {
+  max-width: 100%;
+}
+nav {
+  position: absolute;
+  right: 0;
+}
+@media screen and (max-width: 1000px) {
+  nav {
+    position: relative;
+    float: right;
+  }
+}
+nav ul {
+  list-style-type: none;
+  float: right;
+  margin-top: 20px;
+  padding-left: 0;
+}
+nav ul li {
+  float: left;
+  margin-left: 40px;
+}
+nav ul li:first-child {
+  margin-left: 0;
+}
+nav ul li a {
+  text-decoration: none !important;
+}
+nav ul li.highlighted a {
+  background: rgba(255, 255, 255, 0.9);
+  color: #3a5b9e;
+  padding: 7px 10px 5px 10px;
+}
+#about {
+  float: left;
+  margin-top: -30px;
+}
+#about h1 {
+  font-family: 'Amaranth', cursive;
+  font-size: 50px;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  font-weight: 100;
+}
+#about p {
+  font-size: 20px;
+  font-family: 'Lato';
+}
+#about .dates {
+  padding-left: 30px;
+}
+#about .dates h2 {
+  margin-top: 34px;
+  margin-bottom: 26px;
+}
+h1,
+h2,
+h3,
+h4 {
+  vertical-align: bottom;
+  font-family: 'Amaranth';
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+h1 img,
+h2 img,
+h3 img,
+h4 img {
+  margin-right: 15px;
+}
+h1 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 30px;
+  margin: 40px 0 15px 0;
+}
+h4 {
+  font-size: 26px;
+  margin: 30px 0 10px 0;
+}
+#speakers img.speaker {
+  max-width: 220px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+}
+#speakers h3 {
+  font-weight: bold;
+  font-size: 40px;
+}
+#speakers .speaker {
+  margin-bottom: 30px;
+}
+#attendees {
+  margin-top: 30px;
+}
+#attendees img.attendee {
+  max-width: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+}
+#attendees h4 {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 20px 0 0 0;
+}
+#attendees .col-md-4 {
+  margin-bottom: 30px;
+}
+#attendees p {
+  font-size: 16px;
+}
+#tickets form {
+  margin: 30px auto;
+}
+#tickets form input[type="email"] {
+  width: 65%;
+  font-size: 20px;
+  font-family: 'Lato';
+  padding: 6px 15px;
+  height: auto;
+}
+#tickets form input[type="submit"] {
+  background: #3a5b9e;
+  color: white;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  border: 0px;
+  font-size: 18px;
+  height: auto;
+  padding: 9px 20px 8px;
+}
+#tickets .centered {
+  text-align: center;
+}
+#tickets .btn {
+  text-decoration: none;
+}
+#tickets .btn-large {
+  font-size: 26px;
+  padding: 10px 30px;
+  margin: 10px 0 20px;
+}
+#tickets .small {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  #tickets form input[type="email"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+#sponsors .row {
+  margin: 30px 0;
+}
+#sponsors .row .col-md-7 {
+  font-size: 16px;
+  line-height: 160%;
+}
+#sponsors .row .col-md-5 {
+  text-align: center;
+}
+#sponsors .heart .wrapper {
+  text-align: center;
+}
+#sponsors .heart img {
+  width: 100%;
+  max-width: 250px;
+}
+#sponsors .description {
+  margin-top: 50px;
+}
+#sponsors .preview {
+  outline: 1px dashed #ccc;
+  background-image: url("../img/preview-background.7959d8ce302f.png");
+}
+#sponsors .sponsor {
+  position: relative;
+}
+#sponsors .sponsor .toolbox {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  z-index: 9000;
+}
+#sponsors .sponsor:hover .toolbox {
+  display: inline;
+}
+#sponsors .sponsor .logo {
+  max-width: 100%;
+}
+#sponsors .sponsor.silver {
+  text-align: center;
+}
+#talks .row {
+  margin-bottom: 30px;
+}
+#talks .row .speaker {
+  max-width: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+#talks .row h3 {
+  margin: 10px 0;
+}
+#talks .row h4 {
+  margin: 0;
+}
+#talks .row .col-md-7 {
+  min-height: 500px;
+}
+footer h2 {
+  margin-bottom: 50px;
+}
+footer .twitter img {
+  margin-right: 15px;
+}
+footer a {
+  text-decoration: none !important;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0 0 0 15px;
+}
+footer .credits {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+}
+#coc {
+  float: left;
+  margin-top: -30px;
+}
+#coc h3 {
+  font-family: 'Amaranth';
+  font-size: 32px;
+  margin-top: 30px;
+}
+.cls {
+  clear: both;
+}
+.centered-margin {
+  text-align: center;
+  margin: 30px 0;
+}
+.btn,
+.btn:hover {
+  background: #3a5b9e;
+  color: white;
+  font-family: 'Lato';
+  border: 0px;
+  font-size: 24px;
+  height: auto;
+  padding: 9px 20px 8px;
+  text-decoration: none;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+.emoji-alt {
+  font-weight: normal;
+}
+.emoji-alt:hover,
+.emoji-alt:focus {
+  outline: 1px dotted #f9bf3b;
+  cursor: help;
+}
+.emojimode-toggler {
+  cursor: pointer;
+}
+#schedule .day {
+  margin-top: 30px;
+  border-top: 5px solid #3a5b9e;
+  padding: 0;
+}
+#schedule .day .header {
+  border-bottom: 10px solid #3a5b9e;
+  padding: 20px 0 5px;
+}
+#schedule .day .header h3 {
+  margin: 0 0 5px 0;
+}
+#schedule .day .sessions .session {
+  padding: 10px 0;
+  border-bottom: 1px solid #f9bf3b;
+  border-left: 1px solid #f9bf3b;
+  height: 85px;
+}
+#schedule .day .sessions .session .datetime {
+  width: 30%;
+  float: left;
+  height: 100%;
+  padding-left: 15px;
+}
+#schedule .day .sessions .session .session-details {
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+#schedule .day .sessions .session .session-details p {
+  margin: 0;
+}
+#schedule .day .sessions .session .session-details .speaker {
+  font-size: 16px;
+}
+#schedule .day .sessions .break {
+  background: #f9bf3b;
+  color: white;
+  border-left: 1px solid white;
+}
+#schedule .day .sessions .spacer-150min {
+  height: 276px;
+}
+#schedule .day .sessions .session-90min {
+  height: 128px;
+}
+#schedule .day .sessions .session-45min {
+  height: 64px;
+}
+#schedule .day .sessions .session-15min {
+  height: 43px;
+  padding: 5px 0;
+}
+#schedule .day .sessions .sprint-1 {
+  height: 298px;
+}
+#schedule .day .sessions .sprint-2 {
+  height: 425px;
+}
+#schedule .day:last-child .session {
+  border-right: 1px solid #f9bf3b;
+}
+#schedule .day:first-child .break {
+  border-left: 0px;
+}

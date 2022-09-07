@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django: Under the Hood</title>
+        <meta name="description" content="Django: Under the Hood is an exciting conference for experienced Django developers. Come and learn about the internals of Django, and help to shape its future.">
+        <meta name="keywords" content="programming, python, django, conference, under the hood">
+
+        <meta property="og:title" content="Django: Under the Hood" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Django: Under the Hood is an exciting conference for experienced Django developers. Come and learn about the internals of Django, and help to shape its future." />
+        <meta property="og:url" content="http://www.djangounderthehood.com/" />
+        <meta property="og:image" content="http://www.djangounderthehood.com/static/img/avatar.png" />
+
+        <link rel="icon" type="image/x-icon" href="../static/img/favicon.95b345802335.ico" />
+        <script type="text/javascript" src="https://use.typekit.net/fwr5dcz.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="../static/js/moment.min.8c2def395d7e.js"></script>
+        <script type="text/javascript" src="../static/js/jquery.countdown.min.86e6935e84ef.js"></script>
+        <script type="text/javascript" src="../static/js/main.07084ab4d9bc.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Amaranth:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="../static/css/style.f94ab8d97b34.css" media="screen">
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <nav>
+                    
+
+<ul>
+	<li><a href="../schedule/index.html" data-emoji-alt="🕒">Schedule</a></li>
+	<li><a href="../index.html#speakers" data-emoji-alt="📢">Speakers</a></li>
+	<li><a href="../index.html#sponsors" data-emoji-alt="💞">Sponsors</a></li>
+	<li><a href="../travel/index.html" data-emoji-alt="🚀">Travel</a></li>
+    <li><a href="index.html">Sprints</a></li>
+    <br>
+	<li><a href="../accessibility/index.html" data-emoji-alt="♿">Accessibility</a></li>
+	<li><a href="../coc/index.html">Code of Conduct</a></li>
+	<li><a href="http://blog.djangounderthehood.com" data-emoji-alt="📖">Blog</a></li>
+</ul>
+
+                </nav>
+                <header>
+                    <a href="../index.html">
+                        <img src="../static/img/header.4122d70aa7fd.png" alt="Django: Under the Hood"/>
+                    </a>
+                </header>
+
+                
+                
+
+    <section id="sprints" class="row">
+        <h1>
+            Sprints
+        </h1>
+
+        <h2>For the first time Sprinters</h2>
+
+        <p>
+            Sprints are concentrated effort to make <em>Django</em> project itself and it's
+            ecosystem`
+            better. In other words, it means that we're going to work on Django codebase to make it
+            better. Can you do it? <strong>Yes!</strong> It's not hard and we're here to
+            help you if you get lost. <em>Django</em> has
+            <a href="https://docs.djangoproject.com/en/1.8/internals/contributing/">good writeup on
+                how to contribute</a>, but we've prepared some tips to you get going.
+        </p>
+
+        <h4>Preparations</h4>
+
+        <p>
+            Start by making sure that you have <em>Django</em> code and that you can run test suite
+            with all tests passing. In short, you need to:
+        </p>
+
+        <ol>
+            <li>
+                Fork <a href="https://github.com/django/django#fork-destination-box"> Django on
+                GitHub</a>,
+            </li>
+            <li>
+                Clone your fork locally with
+                <code>git clone git@github.com:YourGitHubName/django.git</code>,
+            </li>
+            <li>
+                Go into tests directory: <code>cd django/tests</code>,
+            </li>
+            <li>
+                If you have <em>Python 3</em>, you can run tests right away with
+                <code>PYTHONPATH=..:$PYTHONPATH python3 ./runtests.py</code>,
+            </li>
+            <li>
+                On <em>Python 2</em> you will need to install some dependencies with
+                <code>pip install -r requirements/py2.txt</code>. You might do that in a separate
+                <a href="https://virtualenv.readthedocs.org/en/latest/">virtualenv</a>. Then
+                run the tests with <code>PYTHONPATH=..:$PYTHONPATH python ./runtests.py</code>
+            </li>
+
+            <li>
+                While you're at it, join our <a
+                    href="http://webchat.freenode.net/?channels=django-sprint">#django-sprint IRC
+                channel</a>.
+            </li>
+        </ol>
+
+        <p>
+            You should be good to go! Remember, if you have problems with this you can ask sprint
+            organizers or other people for help.
+
+            If you want to know more, <em>Django</em> documentation goes into more details about
+            <a href="https://docs.djangoproject.com/en/1.8/internals/contributing/writing-code/unit-tests/">
+                running unit test</a> and <a
+                href="https://docs.djangoproject.com/en/1.8/internals/contributing/writing-code/working-with-git/">
+            working with GitHub</a>.
+        </p>
+
+        <h4>Doing stuff</h4>
+
+        <p>
+            <em>Django</em> is a big project and there's lot's of things you can do. Check out
+            <a href="https://docs.djangoproject.com/en/1.8/internals/contributing/new-contributors/"
+                    >Advice for new contributors</a> in <em>Django</em> documentation, it lists
+            things do, but in short those are:
+        </p>
+        <ul>
+            <li>
+                <a href="https://docs.djangoproject.com/en/1.8/internals/contributing/triaging-tickets/#how-can-i-help-with-triaging">
+                    reproducing bug reports</a>,
+            </li>
+            <li>
+                <a href="https://docs.djangoproject.com/en/1.8/internals/contributing/writing-code/submitting-patches/#patch-review-checklist">reviewing
+                    patches</a>,
+            </li>
+            <li>
+                <a href="https://docs.djangoproject.com/en/1.8/internals/contributing/writing-code/submitting-patches/">writing
+                    new patches and updating old ones</a>,
+            </li>
+            <li>
+                <a href="https://docs.djangoproject.com/en/1.8/internals/contributing/writing-documentation/">
+                    writing and improving documentation</a>.
+            </li>
+        </ul>
+
+        <p>
+            You can use <a href="https://dashboard.djangoproject.com/">Django Development
+            Dashboard</a> for browsing tickets by various predefined criteria. You can also take
+            a look at a prepared <a href="https://code.djangoproject.com/wiki/LittleEasyImprovements">
+            list of tickets needing patch improvements</a>.
+        </p>
+
+        <p>
+            During the sprints you have opportunity to talk to fellow Django programmers, including
+            members of the core team, so take advantage of it. Talk to people about what's your
+            pain in Django. Pair with someone on a ticket, two pairs of eyes are better than one.
+            Don't be afraid to ask questions and don't give up.
+        </p>
+
+    </section>
+
+
+            </main>
+            <footer>
+                
+
+<div class="row">
+    <div class="col-md-12">
+        <h2><img src="../static/img/contact-header.a622c92fcbbd.png" alt="CONTACT" /></h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+       	<ul>
+       		<li><a href="http://blog.djangounderthehood.com" data-emoji-alt="📖">Blog</a></li>
+       		<li><a href="http://twitter.com/DjangoUnderHood" data-emoji-alt="🐦">Twitter</a></li>
+       		<li><a href="../coc/index.html">Code of Conduct</a></li>
+       		<li><a href="../coc/index.html#reporting-harrassment">Emergency contact</a></li>
+       	</ul>
+    </div>
+    <div class="col-md-4 twitter">
+        <p>
+        	Got a question? Drop us a line: <a href="mailto:hello@djangounderthehood.com">hello@djangounderthehood.com</a>
+        <p>
+            <img src="../static/img/icons/twitter.b042b5b6e539.png" alt="Twitter icon" />
+           	<a href="http://twitter.com/DjangoUnderHood">
+                @DjangoUnderHood
+            </a>
+        </p>
+    </div>
+</div>
+
+<p class="credits row"><span data-emoji-alt="🎸🚗">Django: Under The Hood</span> conference is organized by Kasia Kamińska, Ola Sitarska, Tomek Paczkowski, Baptiste Mispelon, Ola Sendecka, Erik Romijn, and Marc Tamlyn with help from the <span data-emoji-alt="🌷🎸👬👭">Dutch Django Association</span>.</p>
+
+<p class="easteregg row text-center">
+    <a title="Turn on emoji mode" class="emojimode-toggler emojimode-off">😺</a>
+</p>
+
+            </footer>
+        </div>
+    </body>
+</html>

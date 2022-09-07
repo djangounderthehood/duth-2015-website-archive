@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django: Under the Hood</title>
+        <meta name="description" content="Django: Under the Hood is an exciting conference for experienced Django developers. Come and learn about the internals of Django, and help to shape its future.">
+        <meta name="keywords" content="programming, python, django, conference, under the hood">
+
+        <meta property="og:title" content="Django: Under the Hood" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Django: Under the Hood is an exciting conference for experienced Django developers. Come and learn about the internals of Django, and help to shape its future." />
+        <meta property="og:url" content="http://www.djangounderthehood.com/" />
+        <meta property="og:image" content="http://www.djangounderthehood.com/static/img/avatar.png" />
+
+        <link rel="icon" type="image/x-icon" href="static/img/favicon.95b345802335.ico" />
+        <script type="text/javascript" src="https://use.typekit.net/fwr5dcz.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="static/js/moment.min.8c2def395d7e.js"></script>
+        <script type="text/javascript" src="static/js/jquery.countdown.min.86e6935e84ef.js"></script>
+        <script type="text/javascript" src="static/js/main.07084ab4d9bc.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Amaranth:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="static/css/style.f94ab8d97b34.css" media="screen">
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <nav>
+                    
+
+<ul>
+	<li><a href="schedule/index.html" data-emoji-alt="🕒">Schedule</a></li>
+	<li><a href="index.html#speakers" data-emoji-alt="📢">Speakers</a></li>
+	<li><a href="index.html#sponsors" data-emoji-alt="💞">Sponsors</a></li>
+	<li><a href="travel/index.html" data-emoji-alt="🚀">Travel</a></li>
+    <li><a href="sprints/index.html">Sprints</a></li>
+    <br>
+	<li><a href="accessibility/index.html" data-emoji-alt="♿">Accessibility</a></li>
+	<li><a href="coc/index.html">Code of Conduct</a></li>
+	<li><a href="http://blog.djangounderthehood.com" data-emoji-alt="📖">Blog</a></li>
+</ul>
+
+                </nav>
+                <header>
+                    <a href="index.html">
+                        <img src="static/img/header.4122d70aa7fd.png" alt="Django: Under the Hood"/>
+                    </a>
+                </header>
+
+                
+                
+
+<section id="about">
+    
+
+
+<div class="row" id="about">
+    <div class="col-md-7">
+        
+        <h1 data-emoji-alt="🎸🚗">Django: Under The Hood</h1>
+        <p>
+            <span data-emoji-alt="🎸🚗">Django: Under the Hood</span> is back for its second edition! Join us for this exciting <span data-emoji-alt="🎸">Django</span> conference for experienced <span data-emoji-alt="🎸">Django</span> developers. Come and learn about the internals of
+            <span data-emoji-alt="🎸">Django</span>, and help to shape its future.
+        </p>
+        <p>
+            The conference is being organised by members of the core team in association with the <a href="http://djangovereniging.nl" data-emoji-alt="🌷🎸👬👭">Dutch Django Association</a>.
+            All attendees must follow the <a href="coc/index.html">Code of Conduct</a>.
+        </p>
+        
+    </div>
+
+    <div class="col-md-5 dates">
+        <h2>When & where?</h2>
+        <p>
+            The conference will start at noon on the 5th of November (Thursday) and end late on the 7th of November. It will take place in <span data-emoji-alt="🌷">Amsterdam, the Netherlands</span> at the Pakhuis de Zwijger.
+        </p>
+        <p>
+            The sprints will take place on the Saturday, 7th of November at <a href="https://goo.gl/maps/xQiKkQGVUkP2">TravelBird's
+            office at Keizersgracht 281, Amsterdam</a>. We're going to start around 10:00.
+        </p>
+    </div>
+</div>
+
+</section>
+<div class="cls"></div>
+
+<section id="speakers">
+    
+
+<div class="row">
+    <div class="col-md-12">
+        <h2><img src="static/img/speakers-header.a65cd270aa95.png" alt="SPEAKERS" /></h2>
+        <p>
+            The schedule is as follows:
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="speaker col-md-6 clearfix">
+        <img src="static/img/speakers/russ.2187fc1e1859.png" class="speaker" alt="Russell Keith-Magee" />
+        <h3>
+            <span data-emoji-alt="🐨DORK-1">Russell</span> Keith-Magee
+        </h3>
+        <p>
+            <span data-emoji-alt="🐨DORK-1">Russell</span> will giving our keynote talk “Once upon a <span data-emoji-alt="🎸">Django</span>”
+        </p>
+    </div>
+    <div class="speaker col-md-6 clearfix">
+        <img src="static/img/speakers/amber.ecb2305225c9.png" class="speaker" alt="Amber Hawkie Brown" />
+        <h3>
+            Amber <span data-emoji-alt="🐦🐦">HawkOwl</span> Brown
+        </h3>
+        <p>
+            Amber will be speaking about <span data-emoji-alt="🔀🐍">Twisted</span> and <span data-emoji-alt="🎸">Django</span>
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="speaker col-md-6 clearfix">
+        <img src="static/img/speakers/jacob.ae1e5d86f64f.png" class="speaker" alt="Jacob Kaplan-Moss" />
+        <h3>
+            <span data-emoji-alt="🚜🏃">Jacob</span> Kaplan-Moss
+        </h3>
+        <p>
+            Jacob will be speaking about HTTP in <span data-emoji-alt="🎸">Django</span>
+        </p>
+    </div>
+    <div class="speaker col-md-6 clearfix">
+        <img src="static/img/speakers/florian.ac0685d4c7f3.png" class="speaker" alt="Florian Apolloner" />
+        <h3>
+            Florian <span data-emoji-alt="🚀">Apolloner</span>
+        </h3>
+        <p>
+            Florian will be speaking about <span data-emoji-alt="🎸">Django</span>'s <span data-emoji-alt="🔒">security</span> features
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="speaker col-md-6 clearfix">
+        <img src="static/img/speakers/iacopo.b80fdd3a49b9.png" class="speaker" alt="Iacopo Spalletti" />
+        <h3>
+            Iacopo Spalletti
+        </h3>
+        <p>
+            Iacopo will be speaking about django CMS and the <span data-emoji-alt="🎸 🅾️®️Ⓜ️">Django ORM</span>
+        </p>
+    </div>
+    <div class="speaker col-md-6 clearfix">
+        <img src="static/img/speakers/josh.e10259f79cfc.png" class="speaker" alt="Josh Smeaton" />
+        <h3>
+            Josh Smeaton
+        </h3>
+        <p>
+            Josh will be speaking about Expressions
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="speaker col-md-6 clearfix">
+        <img src="static/img/speakers/ola.7f8f11bfab7b.png" class="speaker" alt="Ola Sitarska" />
+        <h3>
+            Ola Sitarska
+        </h3>
+        <p>
+            Ola will be speaking about the <span data-emoji-alt="🎸">Django</span> Admin
+        </p>
+    </div>
+    <div class="speaker col-md-6 clearfix">
+        <img src="static/img/speakers/james.e15f3a0ccc45.png" class="speaker" alt="James Aylett" />
+        <h3>
+            James Aylett
+        </h3>
+        <p>
+            James will be speaking about files in <span data-emoji-alt="🎸">Django</span>
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="speaker col-md-6 clearfix">
+        <img src="static/img/speakers/eric.1f115a9c5923.png" class="speaker" alt="Eric Holscher" />
+        <h3>
+            <span data-emoji-alt="📄⛺">Eric</span> Holscher
+        </h3>
+        <p>
+            Eric will be speaking on documentation systems for programmers
+        </p>
+    </div>
+    <div class="speaker col-md-6 clearfix">
+        <img src="static/img/speakers/mikey.35aba39fd464.png" class="speaker" alt="Mikey Ariel" />
+        <h3>
+            <span data-emoji-alt="📄💃">Mikey</span> Ariel
+        </h3>
+        <p>
+            Mikey will run a "Docs: Under the Hood" workshop alongside the <span data-emoji-alt="🏃">sprints</span>
+        </p>
+    </div>
+</div>
+
+</section>
+
+<section id="testimonials">
+    
+
+<div class="row">
+    <div class="col-md-12">
+        <h2><img src="static/img/lastyear-header.963939b4d63d.png" alt="LAST YEAR" /></h2>
+        <p>
+            The first edition of Django Under The Hood happened last year. 
+            This is what people said:
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 clearfix">
+        <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/DUTH?src=hash">#DUTH</a> was awesome! Thanks to everyone that had a part in it. I submitted my first pull request to Django ever :o \o/</p>&mdash; Wouter ("https://twitter.com/wadevries/status/533629852579291136">November 15, 2014</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="col-md-6 clearfix">
+        <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Essentially the best Django conference I&#39;ve attended. <a href="https://twitter.com/hashtag/duth?src=hash">#duth</a> <a href="http://t.co/tohnPCLlfT">http://t.co/tohnPCLlfT</a></p>&mdash; Ania Warzecha ("https://twitter.com/aniawarzecha/status/533298110949490688">November 14, 2014</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 clearfix">
+        <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">On my way back home after an amazing first <a href="https://twitter.com/DjangoUnderHood">"https://twitter.com/hashtag/duth?src=hash">#duth</a> <a href="https://twitter.com/hashtag/django?src=hash">#django</a></p>&mdash; j. ezdez (@jezdez) <a href="https://twitter.com/jezdez/status/533697754787479552">November 15, 2014</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <div class="col-md-6 clearfix">
+        <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Thank you <a href="https://twitter.com/DjangoUnderHood">"https://twitter.com/hashtag/duth?src=hash">#duth</a></p>&mdash; Burhan Khalid (@burhan) <a href="https://twitter.com/burhan/status/533661512783917056">November 15, 2014</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 clearfix">
+        <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Easily the best conference I&#39;ve attended all year. Amazingly deep, interesting and technical talks. Great job <a href="https://twitter.com/DjangoUnderHood">"https://twitter.com/hashtag/duth?src=hash">#duth</a></p>&mdash; Paul (@phalt_) <a href="https://twitter.com/phalt_/status/533348682968879104">November 14, 2014</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <div class="col-md-6 clearfix">
+        <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/DUTH?src=hash">#DUTH</a> was the best Django conference thus far. 100% keynotes, 100% great. It was an honor to sponsor it. Until the next time!</p>&mdash; Mirumee Labs ("https://twitter.com/mirumeelabs/status/533728264209317889">November 15, 2014</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
+
+
+</section>
+
+<section id="tickets">
+    
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>
+           <img src="static/img/tickets-header.cb36c8691b77.png" alt="TICKETS" />
+        </h2>
+
+        <div class="countdown" data-target="2015-09-17T11:00:00+00:00">
+            <div class="countdown-past hidden">
+                <p>The first batch of <span data-emoji-alt="🎫">tickets</span> has been sold out. Second batch is not on sale yet, but if you would like to get a ticket, you can register your interest below. You will have an opportunity to buy one for just 150€.  </p>
+                <p>
+                    <span data-emoji-alt="🎫">Tickets</span> will go on sale in:
+                    <strong>
+                        <span class="countdown-container"  title="2015-09-17T11:00:00+00:00">
+                            0 minutes
+                        </span>
+                    </strong>
+                </p>
+
+                <p>If you want to have <span data-emoji-alt="🎫">tickets</span> for your team reserved, please scroll down to learn about the <span data-emoji-alt="💞">sponsorship</span> opportunities.</p>
+
+                <h4>Get notified when <span data-emoji-alt="🎫">tickets</span> go on sale:</h4>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <form action="http://djangounderthehood.us8.list-manage.com/subscribe/post?u=7e08f3e7ba2446210dc2f72fb&amp;id=73dca2200d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+                            <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Your e-mail" id="mce-EMAIL">
+
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_7e08f3e7ba2446210dc2f72fb_ec773db38a" tabindex="-1" value=""></div>
+                            <input type="submit" value="Let me know!" class="form-control" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="countdown-future">
+                <p><span data-emoji-alt="🎫">Tickets</span> are now available.</p>
+
+                <p class="centered"><a href="http://tickets.djangounderthehood.com/" class="btn btn-large btn-primary">Get your ticket now!</a></p>
+
+                <p class="small"><b>Refund policy:</b> We can accept <span data-emoji-alt="🎫">ticket</span> cancellations up to two weeks before the event. If you want to cancel after that, we will refund only if we find a new buyer for your <span data-emoji-alt="🎫">ticket</span>. </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<section id="sponsors">
+    
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>
+            <img src="static/img/sponsors-header.d6c271529af3.png" alt="SPONSORS" />
+        </h2>
+    </div>
+</div>
+
+<h3>Gold sponsors</h3>
+
+<div class="sponsor gold row  vertical-center">
+    
+    <div class="col-md-5">
+        <a href="https://opbeat.com/" target="_blank">
+            <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/opbeat.png" alt="Opbeat" title="Opbeat"/>
+        </a>
+    </div>
+    <div class="col-md-7">
+        <p><a href="https://opbeat.com/" target="_blank">Opbeat</a> is the application monitoring platform built for Django that combines performance metrics, release tracking, and error logging into a single simple service. It integrates with Git, and sets up in minutes.</p>
+
+<p>The guys and girls from Opbeat are working hard to simplify the post-shipping workflow, and are active members of Django Copenhagen. They consume substantial amounts of coffee in the process.</p>
+
+<p>Opbeat will be sponsoring the coffee at this year’s Django: Under the Hood, and will be recognisable by their coffee-pot t-shirts.</p>
+
+<p>If you see a member of the Opbeat crew please feel free to give them a refill.<br /></p>
+    </div>
+</div>
+
+<div class="sponsor gold row  vertical-center">
+    
+    <div class="col-md-5">
+        <a href="http://vikingco.com/" target="_blank">
+            <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/VikingCo_transparant.png" alt="VikingCo" title="VikingCo"/>
+        </a>
+    </div>
+    <div class="col-md-7">
+        <p>VikingCo is not your everyday company. As part of <a href="http://vikingco.com/" target="_blank">VikingCo</a>, which also markets <a href="https://citylife.be/" target="_blank">CityLife</a>, our core business is telecoms. But that might just be a cover-up for our alternative development initiatives, and building an innovative ecosystem which goes beyond classic telco services. Hence our embracing the likes of Django and Python. VikingCo prefers to do things its own way (<a href="https://mobilevikings.be/en" target="_blank">Mobile Vikings</a> have been called stubborn), so we are developing our own top notch software platform allowing us to offer additional services to our Vikings and CityLifers, and easily integrate with partners in our ecosystem. To this day we also keep upgrading our free mobile apps (the awesome Viking App and CityLife App). But we’re open-minded too: sharing knowledge is our belief. Maybe you’re already familiar with some of our open source <a href="https://github.com/vikingco/" target="_blank">repositories</a> (django datatrans, django advanced reports or django states)? VikingCo always seeks the win-win within its ecosystem. Just ask Ingenico, Connective, or Sparkcentral. Our people are so much more than devs: obviously they code, but they’re given the opportunity to lead projects and the freedom to put forward projects as well. This may sound cocky, but, just as we lead the mobile revolution, our ambition is to go above and beyond in platform development as well. We’re facing a huge challenge. Don’t miss out.</p>
+    </div>
+</div>
+
+<div class="sponsor gold row  vertical-center">
+    
+    <div class="col-md-5">
+        <a href="http://heroku.com/" target="_blank">
+            <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/heroku.png" alt="Heroku" title="Heroku"/>
+        </a>
+    </div>
+    <div class="col-md-7">
+        <p>Heroku, a <a href="http://2015.djangounderthehood.com/salesforce.com" target="_blank">http://salesforce.com</a> company and industry pioneer in platform as a service, has enabled developers to build and run more than four million applications - all entirely in the cloud, without the need to purchase or maintain any servers or software. With support for the most popular languages, an enterprise-class database service, and an add-ons ecosystem featuring over 150 cloud application services, Heroku provides companies from startups to Fortune 500 enterprises with a faster and more effective way to create, deploy and manage apps.</p>
+    </div>
+</div>
+
+<div class="sponsor gold row  vertical-center">
+    
+    <div class="col-md-5">
+        <a href="https://www.fanduel.com/" target="_blank">
+            <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/fanduel.png" alt="FanDuel" title="FanDuel"/>
+        </a>
+    </div>
+    <div class="col-md-7">
+        <p><a href="https://www.fanduel.com/" target="_blank">FanDuel</a> is the pioneer and global leader in daily fantasy sports, offering games with NBA, NFL, MLB and NHL, as well as college football and basketball. The company has over one million active paying users in North America and is predicted to pay out almost $2 billion in prizes this year.</p>
+
+<p>Founded in 2009 in Edinburgh, FanDuel is headquartered in New York and has offices in Orlando, Los Angeles, Edinburgh and Glasgow. The company employs 500 people across its UK and US offices and continues to actively hire.</p>
+    </div>
+</div>
+
+<div class="sponsor gold row  vertical-center">
+    
+    <div class="col-md-5">
+        <a href="http://lyst.com/jobs" target="_blank">
+            <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/Lyst_445.png" alt="Lyst" title="Lyst"/>
+        </a>
+    </div>
+    <div class="col-md-7">
+        <p>Launched in 2010, <a href="http://lyst.com/jobs" target="_blank">Lyst</a> is an innovative way to shop for fashion online that’s used by millions every month. Lyst partners with the world’s top fashion brands and stores — from Topshop, Balenciaga, Alexander Wang and Burberry to Saks, Net-A-Porter, Lane Crawford and Barneys — to provide people with a personalised way to discover the fashion they love. Lyst has raised over $60million from a range of all-star investors and is growing rapidly.</p>
+
+<p>Behind the scenes, we are a data driven company, passionate about Python, Django and building amazing things with the right tools.</p>
+
+<p>Read our developer blog for more info: <a href="http://developers.lyst.com" target="_blank">http://developers.lyst.com</a>.</p>
+    </div>
+</div>
+
+
+<h3>Silver sponsors</h3>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://mirumee.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/logo-mirumee-2014.png" alt="Mirumee" title="Mirumee"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://www.revsys.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/revsys_print_logo.jpg" alt="RevSys" title="RevSys"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://www.dreamsolution.nl/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/dreamsolution.png" alt="Dreamsolution" title="Dreamsolution"/>
+            </a>
+        </div>
+    
+    </div>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://oddbird.net/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/OddBird.png" alt="OddBird" title="OddBird"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://www.leukeleu.nl/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/leukeleu.png" alt="Leukeleu" title="Leukeleu"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://www.legalsense.nl/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/legalsense.png" alt="LegalSense" title="LegalSense"/>
+            </a>
+        </div>
+    
+    </div>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://lincolnloop.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/lincolnloop.png" alt="Lincoln Loop" title="Lincoln Loop"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://www.maykinmedia.nl/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/maykin_transparent_block.png" alt="Maykin Media" title="Maykin Media"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://www.django-cms.org/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/djangocms.png" alt="Django CMS" title="Django CMS"/>
+            </a>
+        </div>
+    
+    </div>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="https://dashcare.nl/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/dashcare.png" alt="DashCare" title="DashCare"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://www.liveperson.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/LivePerson.png" alt="LivePerson" title="LivePerson"/>
+            </a>
+        </div>
+    
+        <div class="sponsor silver col-md-4 ">
+            
+            <a href="http://www.nelen-schuurmans.nl/EN/home/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/nelenschuurmans.png" alt="Nelen &amp; Schuurmans " title="Nelen &amp; Schuurmans "/>
+            </a>
+        </div>
+    
+    </div>
+
+
+<h3>Partners</h3>
+
+    <div class="row vertical-center">
+    
+        <div class="sponsor partner col-md-4 ">
+            
+            <a href="https://p.ota.to/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/potato_final.png" alt="Potato" title="Potato"/>
+            </a>
+        </div>
+    
+        <div class="sponsor partner col-md-4 ">
+            
+            <a href="http://travelbird.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/travelbird-logo.jpg" alt="Travel Bird" title="Travel Bird"/>
+            </a>
+        </div>
+    
+        <div class="sponsor partner col-md-4 ">
+            
+            <a href="http://sunscrapers.com/" target="_blank">
+                <img class="logo" src="static/duth-uploads.s3.amazonaws.com/sponsors/2015/v2_RGB_Color_Vertical_bg.png" alt="Sunscrapers" title="Sunscrapers"/>
+            </a>
+        </div>
+    
+    </div>
+
+
+<div class="row">
+    <h3>Support us!</h3>
+    <div class="col-md-3 heart"> 
+        <div class="wrapper">
+            <img src="static/img/heart.86696217a12c.png" alt="❤️" />
+        </div>
+    </div>
+
+    <div class="col-md-9 description">
+        <p>We are seeking companies who wish to support the event financially. Your help will contribute to making the event as affordable as possible for everyone, as well as letting us bring many of the Django team members to the event to share knowledge and improve the Django development process. If you are interested in helping, please <a href="mailto:hello">get in touch</a>.</p>
+    </div>
+</div>
+
+</section>
+
+
+            </main>
+            <footer>
+                
+
+<div class="row">
+    <div class="col-md-12">
+        <h2><img src="static/img/contact-header.a622c92fcbbd.png" alt="CONTACT" /></h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+       	<ul>
+       		<li><a href="http://blog.djangounderthehood.com" data-emoji-alt="📖">Blog</a></li>
+       		<li><a href="http://twitter.com/DjangoUnderHood" data-emoji-alt="🐦">Twitter</a></li>
+       		<li><a href="coc/index.html">Code of Conduct</a></li>
+       		<li><a href="coc/index.html#reporting-harrassment">Emergency contact</a></li>
+       	</ul>
+    </div>
+    <div class="col-md-4 twitter">
+        <p>
+        	Got a question? Drop us a line: <a href="mailto:hello">hello@djangounderthehood.com</a>
+        <p>
+            <img src="static/img/icons/twitter.b042b5b6e539.png" alt="Twitter icon" />
+           	<a href="http://twitter.com/DjangoUnderHood">
+                
+            </a>
+        </p>
+    </div>
+</div>
+
+<p class="credits row"><span data-emoji-alt="🎸🚗">Django: Under The Hood</span> conference is organized by Kasia Kamińska, Ola Sendecka, Erik Romijn, Tomek Paczkowski, Ola Sitarska, Marc Tamlyn, and Baptiste Mispelon with help from the <span data-emoji-alt="🌷🎸👬👭">Dutch Django Association</span>.</p>
+
+<p class="easteregg row text-center">
+    <a title="Turn on emoji mode" class="emojimode-toggler emojimode-off">😺</a>
+</p>
+
+            </footer>
+        </div>
+    </body>
+</html>
